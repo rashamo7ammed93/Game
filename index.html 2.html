@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مغامرات في اللغة العربية 🌟</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;font-family:Tajawal,Tahoma,sans-serif;background:linear-gradient(160deg,#ffe4f1,#f3e8ff);min-height:100vh;color:#581c87;text-align:center;user-select:none;touch-action:manipulation}
+header{padding:14px 12px 4px}
+h1{margin:0;font-size:26px;color:#be185d}
+.chip{display:inline-block;background:#fff;border-radius:20px;padding:4px 14px;margin-top:6px;font-weight:700;color:#a21caf;box-shadow:0 2px 8px #f9a8d455}
+main{max-width:480px;margin:0 auto;padding:8px 12px 30px}
+section{background:#ffffffcc;border-radius:22px;padding:16px;box-shadow:0 6px 20px #d946ef22}
+select,button{font-family:inherit;font-size:18px}
+select{width:100%;padding:12px;border-radius:14px;border:2px solid #f472b6;background:#fff;color:#581c87;margin:12px 0}
+.btn{background:linear-gradient(135deg,#ec4899,#a855f7);color:#fff;border:0;border-radius:16px;padding:12px 22px;font-weight:800;cursor:pointer;box-shadow:0 4px 0 #86198f}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #86198f}
+.btn:disabled{opacity:.45}
+.btn.s{font-size:14px;padding:6px 14px;margin:2px}
+.gm{display:block;width:100%;margin:10px 0;padding:16px;font-size:20px;text-align:right}
+.gm small{display:block;font-weight:500;font-size:13px;opacity:.9}
+#fb{margin:8px auto;min-height:48px;max-width:480px;padding:10px 12px;border-radius:16px;font-weight:800;font-size:17px;background:#fff;animation:pop .35s}
+#fb.ok{background:#dcfce7;color:#166534;border:2px solid #4ade80}
+#fb.bad{background:#fee2e2;color:#991b1b;border:2px solid #f87171}
+@keyframes pop{0%{transform:scale(.9)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+canvas{width:100%;max-width:420px;border-radius:16px;border:3px solid #f472b6;background:#fff;touch-action:none;display:block;margin:6px auto}
+.bar{display:flex;justify-content:space-between;align-items:center;font-weight:800;margin-bottom:4px}
+.pad{direction:ltr;display:grid;grid-template-columns:repeat(3,64px);grid-template-rows:repeat(2,56px);gap:6px;justify-content:center;margin:8px 0}
+.pad button{border:0;border-radius:14px;background:#f9a8d4;color:#831843;font-size:24px;box-shadow:0 3px 0 #db2777}
+.pad button:active{background:#ec4899}
+#grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0}
+.card{height:78px;border:0;border-radius:16px;background:linear-gradient(135deg,#f9a8d4,#d8b4fe);font-size:26px;font-weight:800;color:#581c87;box-shadow:0 4px 0 #c026d3}
+.card.up{background:#fff;border:3px solid #a855f7;font-size:24px}
+.card.ok{background:#bbf7d0;border:3px solid #22c55e}
+#q{background:#fff;border:2px solid #f472b6;border-radius:14px;padding:10px;margin:6px auto;max-width:420px;font-weight:800;font-size:18px;line-height:1.6;color:#86198f;min-height:48px}
+.sum{background:#fff;border:2px dashed #f472b6;border-radius:16px;padding:8px 14px;text-align:right;line-height:1.8;font-size:16px;margin:8px 0}
+.sum p{margin:6px 0}
+table{width:100%;border-collapse:collapse;margin:6px 0}th,td{border:1px solid #f9a8d4;padding:4px}th{background:#fce7f3}
+#cprev,#mav{display:flex;justify-content:center;margin:6px}
+.og{margin:8px 0 2px;text-align:right;font-weight:800}
+.sw{width:34px;height:34px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px #c084fc;margin:3px}
+.sw.on{box-shadow:0 0 0 4px #a21caf}
+.ob{border:2px solid #f9a8d4;background:#fff;border-radius:12px;padding:5px 10px;margin:3px;font-size:15px;color:#581c87}
+.ob.on{background:#f9a8d4}
+.chip svg{vertical-align:middle}
+.tip{font-size:14px;opacity:.85;margin:4px 0}
+
+#fb,.sum,#q,#sq,#qq{white-space:pre-line}
+#sq,#qq{background:#fff;border:2px solid #f472b6;border-radius:14px;padding:10px;margin:6px auto;max-width:420px;font-weight:800;font-size:18px;line-height:1.8;color:#86198f}
+.lb{font-size:18px;padding:12px;margin:6px 0}
+h3{margin:14px 0 4px;color:#be185d}
+.intro{background:#fff;border:2px dashed #f472b6;border-radius:16px;padding:10px 14px;margin:8px 0 12px;line-height:1.9;font-weight:700;text-align:right}
+footer{max-width:480px;margin:0 auto;padding:6px 12px 26px;text-align:center;font-weight:800;color:#86198f;line-height:1.8}
+</style>
+</head>
+<body>
+<header><h1>🌟 مغامرات في اللغة العربية 🌟</h1></header>
+<main>
+  <section id="home">
+    <div class="intro">📚 مرحبًا بكم! هذه المنصة مخصصة لمادة <b>اللغة العربية</b> للصف <b>الخامس الابتدائي</b>.<br>تتدرّبون فيها على دروس <b>القواعد النحوية والإملائية</b> بثلاث ألعاب ممتعة، مع ملخص قصير لكل درس، وتصويب فوري لأي إجابة خاطئة. اختاروا الدرس وابدؤوا المغامرة! 🚀</div>
+    <div id="mav"></div>
+    <div>اختر/ي الدرس الذي تريد/ين التدرّب عليه، ثم اقرأ/ي الملخص وابدأ/ي اللعب!</div>
+    <h3>📘 القواعد النحوية</h3><div id="lg1"></div>
+    <h3>✏️ القواعد الإملائية</h3><div id="lg2"></div>
+    <button class="btn s" id="edc" style="margin-top:12px">🎨 اصنع/ي شخصيتك</button>
+  </section>
+
+  <section id="cust" hidden>
+    <h2 style="margin:0">✨ اصنع/ي شخصيتك</h2>
+    <div id="cprev"></div><div id="copts"></div>
+    <button class="btn" id="csave" style="margin-top:12px">حفظ ✓</button>
+  </section>
+
+  <section id="lesson" hidden>
+    <h2 id="lt" style="margin:0 0 6px"></h2>
+    <div class="sum" id="ls"></div>
+    <div class="sum" id="lr" style="background:#fef9c3;border-color:#facc15"></div>
+    <p style="font-weight:800">اختر/ي لعبتك:</p>
+    <button class="btn gm" data-g="1">🐍 ثعبان الإجابات<small>وجّه/ي الثعبان لأكل الإجابة الصحيحة</small></button>
+    <button class="btn gm" data-g="2">👧 مغامرة ماريو<small>اقفز/ي واصطدم/ي بالإجابة الصحيحة</small></button>
+    <button class="btn gm" data-g="3">💎 كنز الأسئلة<small>اختر/ي الإجابة الصحيحة واجمع/ي النجوم</small></button>
+    <button class="btn s" data-home>🏠 الرئيسية</button>
+  </section>
+
+  <div id="fbw" hidden><div id="fb"></div></div>
+
+  <section id="g1" hidden>
+    <div class="bar"><span id="s1">⭐ 0</span><button class="btn s" data-lesson>📘 الدرس</button><span id="l1">❤️❤️❤️</span></div>
+    <div id="sq"></div>
+    <canvas id="c1" width="352" height="416"></canvas>
+    <div class="pad"><span></span><button data-d="0,-1">▲</button><span></span><button data-d="-1,0">◀</button><button data-d="0,1">▼</button><button data-d="1,0">▶</button></div>
+    <div class="tip">وجّه/ي الثعبان إلى الإجابة الصحيحة (أ أو ب أو ج). لديك ٣ قلوب!</div>
+    <button class="btn s" data-re="1">🔄 من جديد</button> <button class="btn s" data-home>🏠 الرئيسية</button>
+  </section>
+
+  <section id="g2" hidden>
+    <div class="bar"><span id="s2">⭐ 0</span><button class="btn s" data-lesson>📘 الدرس</button><span id="l2">❤️❤️❤️</span></div>
+    <div id="q"></div>
+    <canvas id="c2" width="360" height="240"></canvas>
+    <div class="pad" style="grid-template-columns:repeat(3,84px);grid-template-rows:60px"><button data-b="l">◀</button><button data-b="u">⤒ قفز</button><button data-b="r">▶</button></div>
+    <div class="tip">اقرأ/ي السؤال في الأعلى، ثم اقفز/ي واصطدم/ي بالمكعب 🟨 الذي يحمل حرف الإجابة الصحيحة. الأسهم للحركة والمسافة للقفز.</div>
+    <button class="btn s" data-re="2">🔄 من جديد</button> <button class="btn s" data-home>🏠 الرئيسية</button>
+  </section>
+
+  <section id="g3" hidden>
+    <div class="bar"><span id="s3"></span><button class="btn s" data-lesson>📘 الدرس</button><span></span></div>
+    <div id="qq"></div><div id="qo"></div>
+    <button class="btn s" data-re="3">🔄 من جديد</button> <button class="btn s" data-home>🏠 الرئيسية</button>
+  </section>
+</main>
+<footer>🌸 إعداد معلمة اللغة العربية: أ. رشا محمد صالح 🌸</footer>
+<script>
+const HR='لرسم الهمزة المتوسطة: قارن بين حركة الهمزة وحركة الحرف قبلها، واختر الأقوى.\nالأقوى إلى الأضعف: الكسرة ثم الضمة ثم الفتحة ثم السكون.\nالكسرة ← ياء (ئ) • الضمة ← واو (ؤ) • الفتحة ← ألف (أ) • السكون ← على السطر (ء)\n';
+const LS=[
+{g:1,t:'بناء الفعل الماضي',s:'الفعل الماضي: كل فعل حدث في الزمن الماضي وانتهى.\nأمثلة: شَرَحَ، كَتَبَ، دَرَسَ، سَمِعَ.\nإعرابه: فعل ماضٍ مبني على الفتح.',r:'الفعل الماضي مبني على الفتح، مثل: كَتَبَ.',q:[
+['حَمِدَ المؤمنُ ربَّه. الفعل الماضي هو:','حَمِدَ','المؤمنُ','ربَّه'],
+['«خَتَمَ أحمدُ جزءَ عمَّ». إعراب «خَتَمَ»:','فعل ماضٍ مبني على الفتح','فعل مضارع مرفوع','فاعل مرفوع'],
+['الفعل الماضي من «يَكْتُبُ» هو:','كَتَبَ','اُكْتُبْ','كاتِب'],
+['الفعل الماضي في «سَمِعَ الطالبُ الشرحَ» هو:', 'سَمِعَ', 'الطالبُ', 'الشرحَ'],
+['حوّل المضارع «يَتَناوَلُ» إلى ماضٍ:', 'تَناوَلَ', 'يَتَناوَلْ', 'تَناوَلْ']]},
+{g:1,t:'رفع الفعل المضارع',s:'الفعل المضارع: فعل يحدث الآن أو في المستقبل.\nأمثلة: يَشْرَحُ، يَكْتُبُ، تَدْرُسُ، تَسْمَعُ.\nإعرابه: فعل مضارع مرفوع وعلامة رفعه الضمة الظاهرة على آخره.',r:'المضارع الخالي من الناصب والجازم مرفوع وعلامة رفعه الضمة.',q:[
+['تُساعِدُ مريمُ والدتَها. الفعل المضارع هو:','تُساعِدُ','مريمُ','والدتَها'],
+['علامة رفع الفعل «يُطيعُ» في «يُطيعُ الفتى والديه»:','الضمة الظاهرة','الفتحة الظاهرة','السكون'],
+['أكمل: «.... أمي الضيوفَ»','تَستقبِلُ','استقبَلَ','استقبِلْ'],
+['«تَحفَظُ مُنى القرآنَ الكريمَ». الفعل المضارع هو:', 'تَحفَظُ', 'مُنى', 'القرآنَ'],
+['إعراب «يَفرَحُ» في «يَفرَحُ الطفلُ بالهديةِ»:', 'فعل مضارع مرفوع وعلامة رفعه الضمة', 'فعل مضارع منصوب وعلامة نصبه الفتحة', 'فعل ماضٍ مبني على الفتح']]},
+{g:1,t:'نصب الفعل المضارع',s:'أدوات النصب: أَنْ، لَنْ، كَيْ، لام التعليل.\nأمثلة: أَنْ يَشرَحَ، كي يَكتُبَ، لَنْ يَكذِبَ، لِيَفرَحَ.\nإعرابه: فعل مضارع منصوب وعلامة نصبه الفتحة الظاهرة على آخره.',r:'بعد أَنْ ولَنْ وكَيْ ولام التعليل يُنصب المضارع بالفتحة.',q:[
+['«ادرُسْ كي تنجَحَ». الفعل المضارع المنصوب هو:','تنجَحَ','ادرُسْ','كي'],
+['أداة النصب في «لَنْ يَكذِبَ الصادقُ» هي:','لَنْ','يَكذِبَ','الصادقُ'],
+['أكمل: «يجبُ أنْ .... والديكَ»','تُطيعَ','تُطيعُ','تُطِعْ'],
+['إعراب «يَشرَحَ» في «أُريدُ أنْ يَشرَحَ المعلمُ»:', 'فعل مضارع منصوب وعلامة نصبه الفتحة', 'فعل مضارع مرفوع وعلامة رفعه الضمة', 'فعل مضارع مجزوم'],
+['اختر أداة النصب المناسبة: «يجتهدُ الطالبُ .... يَنجَحَ»', 'كي', 'لم', 'لا']]},
+{g:1,t:'جزم الفعل المضارع',s:'أدوات الجزم: لَمْ، لا الناهية، لام الأمر.\nأمثلة: لِتَكتُبْ، لِتَشرَحْ، لَمْ أَدرُسْ، لا تَكذِبْ، لا تُسرِعْ.\nإعرابه: فعل مضارع مجزوم وعلامة جزمه السكون الظاهر على آخره.',r:'بعد لَمْ ولا الناهية ولام الأمر يُجزم المضارع بالسكون.',q:[
+['«لا تكذِبْ على الآخرين». الفعل المجزوم هو:','تكذِبْ','الآخرين','على'],
+['علامة جزم الفعل «تُسرِعْ» في «لا تُسرِعْ»:','السكون','الضمة','الفتحة'],
+['أكمل: «لَمْ .... أحمدُ في الشارع»','يَلعَبْ','يَلعَبُ','يَلعَبَ'],
+['إعراب «تَكذِبْ» في «لا تَكذِبْ»:', 'فعل مضارع مجزوم وعلامة جزمه السكون', 'فعل مضارع منصوب وعلامة نصبه الفتحة', 'فعل أمر مبني على السكون'],
+['أداة الجزم في «لِتَتَعاوَنْ مع أخيك» هي:', 'لام الأمر', 'لَنْ', 'كَيْ']]},
+{g:1,t:'فعل الأمر',s:'فعل الأمر: كلمة نطلب بها من المخاطب القيام بعمل ما.\nأمثلة: اشرَحْ، اكتُبْ، تَعَلَّمْ، افرَحْ.\nإعرابه: فعل أمر مبني على السكون.',r:'فعل الأمر الصحيح الآخر مبني على السكون.',q:[
+['«اشرَبْ كوبًا من اللبن يا أحمدُ». فعل الأمر هو:','اشرَبْ','كوبًا','أحمدُ'],
+['إعراب «اكتُبْ» في «اكتُبْ ملاحظاتِكَ»:','فعل أمر مبني على السكون','فعل مضارع مجزوم','فعل ماضٍ مبني على الفتح'],
+['فعل الأمر من «يُعامِلُ» هو:','عامِلْ','عامَلَ','يُعامِلْ'],
+['«عامِلْ أصدقاءَكَ باحترامٍ». فعل الأمر هو:', 'عامِلْ', 'أصدقاءَكَ', 'باحترامٍ'],
+['فعل الأمر من الفعل «يَكتُبُ» هو:', 'اكتُبْ', 'كَتَبَ', 'يَكتُبْ']]},
+{g:1,t:'الفاعل',s:'الفاعل: اسم يأتي بعد الفعل ويدل على من قام بالفعل.\nأمثلة: رَسَمَ محمدٌ، كَتَبَتْ مريمُ، قَفَزَ الأرنبُ، سَمِعَتْ فاطمةُ.\nإعرابه: فاعل مرفوع وعلامة رفعه الضمة الظاهرة على آخره.',r:'الفاعل اسم مرفوع يأتي بعد الفعل ويدل على من قام به.',q:[
+['«قَرَأَ أحمدُ كتابًا مفيدًا». الفاعل هو:','أحمدُ','كتابًا','قَرَأَ'],
+['«يزورُ المسلمُ بيتَ اللهِ الحرامَ». الفاعل هو:','المسلمُ','بيتَ','يزورُ'],
+['علامة رفع الفاعل «محمدٌ» في «رَسَمَ محمدٌ اللوحةَ»:','الضمة','الفتحة','الكسرة'],
+['«كَتَبَتْ مريمُ الواجبَ». الفاعل هو:', 'مريمُ', 'الواجبَ', 'كَتَبَتْ'],
+['إعراب «الأرنبُ» في «قَفَزَ الأرنبُ»:', 'فاعل مرفوع وعلامة رفعه الضمة', 'مفعول به منصوب', 'مبتدأ مرفوع']]},
+{g:1,t:'المفعول به',s:'المفعول به: اسم يدل على ما وقع عليه فعل الفاعل.\nأمثلة: رَسَمَ محمدٌ اللوحةَ. قَرَأَ عادلٌ القرآنَ.\nإعرابه: مفعول به منصوب وعلامة نصبه الفتحة الظاهرة على آخره.',r:'المفعول به اسم منصوب وعلامة نصبه الفتحة.',q:[
+['«يأكلُ محمدٌ الطعامَ». المفعول به هو:','الطعامَ','محمدٌ','يأكلُ'],
+['إعراب «اللوحةَ» في «رَسَمَ محمدٌ اللوحةَ»:','مفعول به منصوب وعلامة نصبه الفتحة','فاعل مرفوع وعلامة رفعه الضمة','مبتدأ مرفوع'],
+['«كَرَّمَ المعلمُ الطالبَ». الفاعل هو:','المعلمُ','الطالبَ','كَرَّمَ'],
+['«تُنَظِّفُ أمي الفاكهةَ». المفعول به هو:', 'الفاكهةَ', 'أمي', 'تُنَظِّفُ'],
+['أكمل بمفعول به مناسب: «حَفِظَ محمدٌ ....»', 'القرآنَ', 'القرآنُ', 'القرآنِ']]},
+{g:1,t:'المبتدأ والخبر',s:'الجملة الاسمية تتكون من مبتدأ وخبر.\nالمبتدأ: الاسم الذي تبدأ به الجملة. الخبر: الاسم الذي نخبر به عن المبتدأ.\nمثال: السماءُ صافيةٌ.\nالخبر يطابق المبتدأ في العدد والنوع والحركة الإعرابية.\nإعرابهما: مرفوعان وعلامة رفعهما الضمة الظاهرة على آخرهما.',r:'المبتدأ والخبر مرفوعان، والخبر يطابق المبتدأ في العدد والنوع.',q:[
+['«الطعامُ مفيدٌ». المبتدأ هو:','الطعامُ','مفيدٌ','الطعامُ مفيدٌ'],
+['أكمل بخبر مناسب: «الورودُ ....»','جميلةٌ','جميلٌ','جميلةً'],
+['إعراب «صافيةٌ» في «السماءُ صافيةٌ»:','خبر مرفوع وعلامة رفعه الضمة','مبتدأ مرفوع','فاعل مرفوع'],
+['الخبر في «الطعامُ مفيدٌ» هو:', 'مفيدٌ', 'الطعامُ', 'الطعامُ مفيدٌ'],
+['أكمل بمبتدأ مناسب: «.... مفيدٌ»', 'العلمُ', 'العلمَ', 'العلمِ']]},
+{g:1,t:'الأفعال الناسخة',s:'الأفعال الناسخة تدخل على الجملة الاسمية: ترفع المبتدأ ويسمى اسمها، وتنصب الخبر ويسمى خبرها.\nأمثلتها: كان، صار، أصبح، أمسى، ليس.\nإعراب اسمها: مرفوع وعلامة رفعه الضمة. إعراب خبرها: منصوب وعلامة نصبه الفتحة.',r:'الفعل الناسخ يرفع المبتدأ (اسمه) وينصب الخبر (خبره).',q:[
+['«أصبحَ الجوُّ باردًا». الفعل الناسخ هو:','أصبحَ','الجوُّ','باردًا'],
+['خبر «كان» في «كانَ الاجتماعُ طويلًا»:','طويلًا','الاجتماعُ','كانَ'],
+['أكمل: «أمسى الليلُ ....»','هادئًا','هادئٌ','هادئٍ'],
+['اسم «أصبحَ» في «أصبحَ الجوُّ باردًا»:', 'الجوُّ', 'باردًا', 'أصبحَ'],
+['أكمل: «كانتِ الزهورُ ....»', 'جميلةً', 'جميلةٌ', 'جميلةٍ']]},
+{g:2,t:'الألف اللينة',s:'تُكتب ألفًا قائمة (ا) في: الاسم الذي ينتهي بمد الياء (زوايا، هدايا)، والفعل أصل الألف فيه واو (دعا – يدعو)، والاسم الثلاثي (سنا، شذا)، وكلمات مثل: كلا، إلا، لا.\nوتُكتب مقصورة (ى) في: الاسم الذي يزيد على ثلاثة أحرف (مأوى، مستشفى)، وفي: إلى، على، حتى، بلى، والفعل أصل الألف فيه ياء (رمى – يرمي)، والفعل الذي يزيد على ثلاثة أحرف (أصغى).',r:'انظر إلى مضارع الفعل الثلاثي: واو ← ألف قائمة (دعا – يدعو)، ياء ← ألف مقصورة (رمى – يرمي).',q:[
+['كيف تُكتب الألف في الفعل (دعا) من (يدعو)؟','دعا','دعى','دعي'],
+['صوِّب الكلمة: (تلى) من (يتلو):','تلا','تلى','تلاا'],
+['الكتابة الصحيحة لكلمة (مستشفى):','مستشفى','مستشفا','مستشفي'],
+['الكتابة الصحيحة لكلمة (هدايا):', 'هدايا', 'هدايى', 'هدايأ'],
+['الكتابة الصحيحة للفعل (رمى) من (يرمي):', 'رمى', 'رما', 'رمي']]},
+{g:2,t:'همزة القطع والوصل',s:'همزة القطع: في أول الكلمة، وتُنطق في أول الكلام ووسطه، وتُرسم (أ، إ): أبسط، أشكال، إنسان.\nهمزة الوصل: في أول الكلمة، وتُنطق في أول الكلام ولا تُنطق عند وصلها بما قبلها، وتُرسم ألفًا (ا): اختراعات، استخدم، اثنان.',r:'همزة القطع تُنطق دائمًا وتُكتب (أ، إ)، وهمزة الوصل لا تُنطق في وسط الكلام وتُكتب ألفًا (ا).',q:[
+['الكلمة التي فيها همزة قطع:','أَقبَلَ','اقتَرَبَ','استَمَعَ'],
+['الكتابة الصحيحة (اسم علم):','أحمد','احمد','إحمد'],
+['الكتابة الصحيحة (همزتها وصل):','امرأة','أمرأة','إمرأة'],
+['الكلمة التي فيها همزة وصل:', 'اثنان', 'أشكال', 'إنسان'],
+['الكتابة الصحيحة:', 'إنسان', 'انسان', 'أنسان']]},
+{g:2,t:'الهمزة المتوسطة المفتوحة وما قبلها مفتوح',s:HR+'هنا: الهمزة مفتوحة وما قبلها مفتوح (فتحة مع فتحة) فتُكتب على ألف (أ): سَأَلَ، رَأَفَ، تَأَلَّمَ.',r:'فتحة مع فتحة: تُكتب الهمزة على ألف (أ).',q:[
+['الكتابة الصحيحة للفعل:','سَأَلَ','سَؤَلَ','سَئَلَ'],
+['الكتابة الصحيحة:','تَأَخَّرَ','تَؤَخَّرَ','تَئَخَّرَ'],
+['أكمل: «.... الأمُّ بطفلِها»','رَأَفَتِ','رَؤَفَتِ','رَئَفَتِ'],
+['الكتابة الصحيحة:', 'تَأَلَّمَ', 'تَؤَلَّمَ', 'تَئَلَّمَ'],
+['الكتابة الصحيحة لكلمة (سَأَم):', 'سَأَم', 'سَؤَم', 'سَئَم']]},
+{g:2,t:'الهمزة المتوسطة الساكنة وما قبلها مفتوح',s:HR+'هنا: الهمزة ساكنة وما قبلها مفتوح، والفتحة أقوى من السكون، فتُكتب على ألف (أ): رَأْس، فَأْس، مَأْدُبَة، دَأْب.',r:'همزة ساكنة بعد فتحة: تُكتب على ألف (أ).',q:[
+['الكتابة الصحيحة:','رَأْس','رَئْس','رَؤْس'],
+['أكمل: «.... الفلاحِ قويةٌ»','فَأْسُ','فَئْسُ','فَؤْسُ'],
+['أكمل: «أقامَ والدي .... عشاءٍ»','مَأْدُبةَ','مَئْدُبةَ','مَؤْدُبةَ'],
+['الكتابة الصحيحة:', 'دَأْب', 'دَئْب', 'دَؤْب'],
+['الكتابة الصحيحة:', 'رَأْي', 'رَئْي', 'رَؤْي']]},
+{g:2,t:'الهمزة المتوسطة المفتوحة وما قبلها مد بالألف أو الواو',s:HR+'هنا: الهمزة مفتوحة وقبلها مدّ بالألف أو الواو، فتُكتب على السطر (ء): إضاءَة، عَبَاءَة، مملوءَة، المُرُوءَة، مَوْبُوءَة.',r:'همزة مفتوحة بعد ألف أو واو مدّ: تُكتب على السطر (ء).',q:[
+['الكتابة الصحيحة:','عَبَاءَة','عَبَائَة','عَبَاأَة'],
+['الكتابة الصحيحة:','المُرُوءَة','المُرُوئَة','المُرُوأَة'],
+['أكمل: «بلادي البحرين .... بالخيراتِ»','مملوءةٌ','مملوئةٌ','مملوؤةٌ'],
+['الكتابة الصحيحة:', 'إضاءَة', 'إضائَة', 'إضاأَة'],
+['الكتابة الصحيحة:', 'مَوْبُوءَة', 'مَوْبُوئَة', 'مَوْبُوأَة']]},
+{g:2,t:'الهمزة المتوسطة المفتوحة وما قبلها حرف ساكن غير المد',s:HR+'هنا: الهمزة مفتوحة وقبلها حرف ساكن (غير حروف المد)، والفتحة أقوى من السكون، فتُكتب على ألف (أ): يَرْأَس، فَجْأَة، يَدْأَب، مَسْأَلَة، يَنْأَى.',r:'همزة مفتوحة بعد حرف ساكن: تُكتب على ألف (أ).',q:[
+['الكتابة الصحيحة:','فَجْأَة','فَجْئَة','فَجْؤَة'],
+['الكتابة الصحيحة:','مَسْأَلَة','مَسْئَلَة','مَسْؤَلَة'],
+['أكمل: «.... المعلمُ لجنةَ البيئةِ»','يَرْأَسُ','يَرْئَسُ','يَرْؤَسُ'],
+['الكتابة الصحيحة:', 'يَدْأَب', 'يَدْئَب', 'يَدْؤَب'],
+['الكتابة الصحيحة:', 'يَنْأَى', 'يَنْئَى', 'يَنْؤَى']]},
+{g:2,t:'الهمزة المتوسطة المفتوحة وما قبلها حرف مضموم',s:HR+'هنا: الهمزة مفتوحة وما قبلها مضموم، والضمة أقوى من الفتحة، فتُكتب على واو (ؤ): مُؤَلِّف، يُؤَسِّس، مُؤَرِّخ، تُؤَجِّل، مُؤَذِّن، يُؤَدِّي.',r:'ضمة قبل همزة مفتوحة: تُكتب الهمزة على واو (ؤ).',q:[
+['الكتابة الصحيحة:','مُؤَلِّف','مُأَلِّف','مُئَلِّف'],
+['أكمل: «لا .... عملَكَ إلى الغدِ»','تُؤَجِّلْ','تُأَجِّلْ','تُئَجِّلْ'],
+['أكمل: «.... هذا الكتابِ بارعٌ»','مُؤَلِّفُ','مُأَلِّفُ','مُئَلِّفُ'],
+['الكتابة الصحيحة:', 'مُؤَرِّخ', 'مُأَرِّخ', 'مُئَرِّخ'],
+['الكتابة الصحيحة:', 'يُؤَسِّس', 'يُأَسِّس', 'يُئَسِّس']]},
+{g:2,t:'الهمزة المتوسطة الساكنة وما قبلها حرف مضموم',s:HR+'هنا: الهمزة ساكنة وما قبلها مضموم، والضمة أقوى من السكون، فتُكتب على واو (ؤ): مُؤْمِن، يُؤْذِي، رُؤْيَة، مُؤْلِم.',r:'ضمة قبل همزة ساكنة: تُكتب الهمزة على واو (ؤ).',q:[
+['الكتابة الصحيحة:','مُؤْمِن','مُأْمِن','مُئْمِن'],
+['أكمل: «كلُّ .... سيدخلُ الجنةَ»','مُؤْمِنٍ','مُأْمِنٍ','مُئْمِنٍ'],
+['الكتابة الصحيحة:','رُؤْيَة','رُأْيَة','رُئْيَة'],
+['الكتابة الصحيحة:', 'يُؤْذِي', 'يُأْذِي', 'يُئْذِي'],
+['الكتابة الصحيحة:', 'مُؤْلِم', 'مُأْلِم', 'مُئْلِم']]}
+];
+
+const DEF={skin:'#f5cba7',hair:'#4a2c17',cloth:'#ec4899',style:0,acc:0,sex:0};
+let AV={...DEF};
+const OP=[['skin','لون البشرة',['#fde0c8','#f5cba7','#e0a97c','#b97a56','#7b4a2e']],
+ ['style','شكل الشعر',['شعر طويل','قصير','ذيل حصان','حجاب']],
+ ['hair','لون الشعر / الحجاب',['#2b1a10','#6b3e1d','#c68642','#e8c15a','#d1495b','#7c3aed','#f472b6','#ffffff']],
+ ['cloth','لون الملابس',['#ec4899','#a855f7','#3b82f6','#10b981','#f59e0b','#ef4444','#14b8a6']],
+ ['acc','إكسسوار',['بدون','🎀 فيونكة','👓 نظارة','👑 تاج']]];
+const OPB=[['style','شكل الشعر',['قصير','مجعّد','جانبي']],
+ ['hair','لون الشعر',['#1f1209','#2b1a10','#6b3e1d','#c68642','#e8c15a','#d1495b']],
+ ['cloth','لون القميص',['#ffffff','#3b82f6','#10b981','#f59e0b','#ef4444','#14b8a6','#a855f7']],
+ ['acc','إكسسوار',['بدون','👓 نظارة','🧢 قبعة','غترة وعقال']]];
+function opts(){const sx=['sex','أنا',['👧 طالبة','👦 طالب']];return AV.sex?[sx,OP[0],...OPB]:[sx,...OP]}
+function avBoy(c,s){
+  const k=c.hair,sk=c.skin,cl=c.cloth,ac=c.acc;
+  const hair=[`<path d="M24 50Q22 14 50 13Q78 14 76 50Q70 28 50 28Q30 28 24 50Z" fill="${k}"/>`,
+   `<g fill="${k}"><circle cx="30" cy="30" r="10"/><circle cx="42" cy="22" r="11"/><circle cx="58" cy="22" r="11"/><circle cx="70" cy="30" r="10"/><circle cx="50" cy="26" r="10"/></g>`,
+   `<path d="M24 50Q20 12 52 12Q80 14 76 48Q72 30 58 26Q40 32 24 50Z" fill="${k}"/>`][c.style]||'';
+  let bk='',fr=hair;
+  if(ac==3){bk='<path d="M14 58Q10 4 50 4Q90 4 86 58Q92 92 80 104H20Q8 92 14 58Z" fill="#fff" stroke="#d1d5db"/>';
+    fr='<path d="M27 44Q30 22 50 22Q70 22 73 44Q60 34 50 34Q40 34 27 44Z" fill="#fff" stroke="#d1d5db"/><ellipse cx="50" cy="21" rx="25" ry="6" fill="none" stroke="#222" stroke-width="4"/>'}
+  const ex=ac==1?'<g fill="none" stroke="#333" stroke-width="2"><circle cx="40" cy="50" r="8"/><circle cx="60" cy="50" r="8"/><path d="M48 50H52"/></g>'
+   :ac==2?'<path d="M22 38Q24 10 50 10Q76 10 78 38Z" fill="#2563eb"/><rect x="18" y="36" width="64" height="7" rx="3" fill="#1d4ed8"/>':'';
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="${s}" height="${s*1.2}">${bk}<path d="M16 120Q16 84 50 82Q84 84 84 120Z" fill="${cl}" stroke="#0002"/><path d="M40 82L50 95L60 82Z" fill="#fff" stroke="#0002"/><rect x="43" y="66" width="14" height="18" fill="${sk}"/><ellipse cx="50" cy="48" rx="25" ry="28" fill="${sk}"/><circle cx="40" cy="50" r="3" fill="#333"/><circle cx="60" cy="50" r="3" fill="#333"/><path d="M42 62Q50 70 58 62" stroke="#b91c5c" stroke-width="2.5" fill="none" stroke-linecap="round"/>${fr}${ex}</svg>`}
+function av(c,s=80){if(c.sex)return avBoy(c,s);
+  const k=c.hair,sk=c.skin,cl=c.cloth,st=c.style;let bk='',fr='';
+  const top=`<path d="M24 48Q24 12 50 12Q76 12 76 48Q62 30 50 30Q38 32 24 48Z" fill="${k}"/>`;
+  if(st==0){bk=`<path d="M20 50Q16 112 30 114H70Q84 112 80 50Z" fill="${k}"/>`;fr=top}
+  else if(st==1)fr=`<path d="M22 58Q16 10 50 10Q84 10 78 58Q72 30 50 30Q28 30 22 58Z" fill="${k}"/><circle cx="23" cy="56" r="9" fill="${k}"/><circle cx="77" cy="56" r="9" fill="${k}"/>`;
+  else if(st==2){bk=`<circle cx="76" cy="26" r="10" fill="${k}"/><path d="M74 32Q98 66 80 96" stroke="${k}" stroke-width="9" fill="none" stroke-linecap="round"/>`;fr=top}
+  else{bk=`<path d="M14 62Q10 6 50 6Q90 6 86 62Q90 104 72 112H28Q10 104 14 62Z" fill="${k}" stroke="#0002"/>`;fr=`<path d="M26 46Q30 20 50 20Q70 20 74 46Q62 34 50 34Q38 34 26 46Z" fill="${k}" stroke="#0002"/>`}
+  const ac=['',`<path d="M50 14L36 5V23ZM50 14L64 5V23Z" fill="#f43f5e"/><circle cx="50" cy="14" r="4" fill="#be123c"/>`,
+   `<g fill="none" stroke="#333" stroke-width="2"><circle cx="40" cy="50" r="8"/><circle cx="60" cy="50" r="8"/><path d="M48 50H52"/></g>`,
+   `<path d="M34 20L37 4L45 14L50 2L55 14L63 4L66 20Z" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>`][c.acc];
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="${s}" height="${s*1.2}">${bk}<path d="M16 120Q16 84 50 82Q84 84 84 120Z" fill="${cl}"/><rect x="43" y="66" width="14" height="18" fill="${sk}"/><ellipse cx="50" cy="48" rx="25" ry="28" fill="${sk}"/><circle cx="40" cy="50" r="3" fill="#333"/><circle cx="60" cy="50" r="3" fill="#333"/><path d="M42 62Q50 70 58 62" stroke="#b91c5c" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="33" cy="58" r="4" fill="#fb7185" opacity=".4"/><circle cx="67" cy="58" r="4" fill="#fb7185" opacity=".4"/>${fr}${ac}</svg>`}
+const avImg=()=>{const i=new Image();i.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(av(AV,60));return i};
+function drawCust(){
+  $('#cprev').innerHTML=av(AV,150);const box=$('#copts');box.innerHTML='';
+  opts().forEach(([k,l,v])=>{const d=document.createElement('div');d.className='og';d.textContent=l;const r=document.createElement('div');
+    v.forEach((o,i)=>{const b=document.createElement('button'),col=o[0]=='#';
+      if(col){b.className='sw'+(AV[k]==o?' on':'');b.style.background=o}else{b.className='ob'+(AV[k]==i?' on':'');b.textContent=o}
+      b.onclick=()=>{AV[k]=col?o:i;if(k=='sex'){AV.style=0;AV.acc=0;if(i){AV.hair='#1f1209';AV.cloth='#ffffff'}else{AV.hair='#4a2c17';AV.cloth='#ec4899'}}drawCust()};r.appendChild(b)});
+    d.appendChild(r);box.appendChild(d)})}
+
+/* ---------- اللعبة 2: ماريو (جمل ناقصة الفعل الماضي) ---------- */
+/* في كل سؤال: أول خيار هو الفعل الماضي الصحيح، ويُخلط ترتيب الخيارات تلقائيًا. عدّلي الجمل هنا إن أحببتِ */
+function mario(){
+  const cv=$('#c2'),x=cv.getContext('2d'),W=360,H=240,L=2600,BW=56,BY=105,X0=[120,460,830,1450,2150];
+  const G=[[0,700],[770,1300],[1370,2000],[2070,2600]];
+  const PL=[[330,150,70],[1100,150,80],[1750,150,80],[2420,150,80]];
+  const solids=[...G.map(g=>({x:g[0],y:200,w:g[1]-g[0],g:1})),...PL.map(a=>({x:a[0],y:a[1],w:a[2]}))];
+  let p,co,en,sc,lv,raf,cp,done,st,right,lastQ,IM=avImg();
+  const hud=()=>{$('#s2').textContent='⭐ '+sc;$('#l2').textContent='❤️'.repeat(Math.max(lv,0))};
+  function setQ(){
+    const c=st.find(s=>!s.done&&s.x0+210>=p.x);
+    const m=c?'✏️ '+c.txt:(st.every(s=>s.done)?'🌟 أحسنت! تابعي إلى العلم 🏁':'تابعي الطريق نحو العلم 🏁');
+    if(m!==lastQ){lastQ=m;$('#q').textContent=m}
+  }
+  function init(){
+    p={x:30,y:150,vx:0,vy:0,w:18,h:22,on:0};cp=30;sc=0;lv=3;done=0;right=0;lastQ='';
+    co=[[350,125],[380,125],[735,150],[1130,125],[1160,125],[1250,170],[1335,150],[1780,125],[1900,170],[2440,125],[2400,170],[2450,170]].map(a=>({x:a[0],y:a[1]}));
+    en=[[390,350,440],[1180,1130,1280],[1700,1660,1760],[1900,1850,1980],[2450,2400,2550]].map(a=>({x:a[0],y:180,min:a[1],max:a[2],v:.7}));
+    st=QS.map((q,i)=>{const x0=X0[i],o=q.o.map(a=>({...a,bad:0,x:0}));o.forEach((b,j)=>b.x=x0+j*70);return{s:q.s,o,done:0,x0,txt:q.s+'\n'+o.map(b=>b.l+') '+b.w).join('    ')}});
+    hud();setQ()}
+  function die(m){lv--;hud();fb(m,0);if(lv<=0){done=1;fb(`انتهت اللعبة! أجبت ${right} من ${st.length} بشكل صحيح 💪 جرّب مرة أخرى`,0)}else{p.x=cp;p.y=150;p.vy=0}}
+  function hit(s,b){const ok=s.o.find(o=>o.ok);s.done=1;
+    if(b.ok){right++;sc+=10;hud();fb('أحسنت! إجابة صحيحة ✓ +10 🎉\n💡 '+cur.r,1)}
+    else{sc=Math.max(0,sc-2);hud();fb(fix(ok,cur.r),0)}
+  }
+  function upd(){
+    const l=KEY.ArrowLeft||B.l,r=KEY.ArrowRight||B.r,u=KEY.ArrowUp||KEY[' ']||B.u;
+    p.vx=(l?-2.4:0)+(r?2.4:0);
+    if(u&&p.on){p.vy=-8.2;p.on=0}
+    p.vy+=.42;const py=p.y+p.h;p.x=Math.max(0,p.x+p.vx);p.y+=p.vy;p.on=0;
+    if(p.vy>=0)for(const s of solids)if(p.x+p.w>s.x&&p.x<s.x+s.w&&py<=s.y+1&&p.y+p.h>=s.y){p.y=s.y-p.h;p.vy=0;p.on=1;if(s.g)cp=s.x+20}
+    if(p.y>H+40)return die('سقطت! ✗ حاول القفز في الوقت المناسب');
+    for(const s of st){if(s.done)continue;let h=0;
+      for(const b of s.o){if(b.bad)continue;
+        if(p.x+p.w>b.x&&p.x<b.x+BW&&p.y<BY+26&&p.y+p.h>BY){hit(s,b);p.vy=Math.max(p.vy,1.5);h=1;break}}
+      if(h)break}
+    en.forEach(e=>{e.x+=e.v;if(e.x<e.min||e.x>e.max)e.v*=-1});
+    for(const e of en)if(p.x+p.w>e.x&&p.x<e.x+20&&p.y+p.h>e.y&&p.y<e.y+20){
+      if(p.vy>0&&p.y+p.h-p.vy<=e.y+8){en=en.filter(q=>q!=e);p.vy=-5;sc+=5;hud();fb('أحسنت! قفزت على العدو ✓ +5 🍄',1)}
+      else{die('لمست العدو! ✗ اقفز فوقه')}
+      break}
+    co=co.filter(c=>{if(Math.abs(p.x+9-c.x)<16&&Math.abs(p.y+11-c.y)<18){sc++;hud();fb(`⭐ أحسنت! +1 (مجموعك ${sc})`,1);return 0}return 1});
+    if(p.x>L-90){done=1;fb(`🏆 مبروك! أجبت ${right} من ${st.length} بشكل صحيح وجمعت ${sc} نقطة 🎉`,1)}
+    setQ();
+  }
+  function draw(){
+    const cam=Math.min(Math.max(p.x-120,0),L-W);
+    x.fillStyle='#bfe9ff';x.fillRect(0,0,W,H);x.save();x.translate(-cam,0);
+    x.font='28px serif';x.textBaseline='alphabetic';x.textAlign='left';
+    [100,500,900,1400,1900,2300].forEach((c,i)=>x.fillText('☁️',c,50+i%2*25));
+    solids.forEach(s=>{if(s.g){x.fillStyle='#a16207';x.fillRect(s.x,s.y,s.w,40);x.fillStyle='#4ade80';x.fillRect(s.x,s.y,s.w,8)}
+      else{x.fillStyle='#f472b6';x.fillRect(s.x,s.y,s.w,12);x.fillStyle='#be185d';x.fillRect(s.x,s.y+10,s.w,2)}});
+    x.font='bold 20px Tajawal,Tahoma';x.textAlign='center';x.textBaseline='middle';
+    st.forEach(s=>{if(!s.done)s.o.forEach(b=>{x.fillStyle=b.bad?'#fca5a5':'#fde047';x.strokeStyle=b.bad?'#dc2626':'#d97706';x.lineWidth=2;
+      x.beginPath();x.roundRect(b.x,BY,BW,26,6);x.fill();x.stroke();x.fillStyle='#581c87';x.fillText(b.l,b.x+BW/2,BY+14)})});
+    x.textAlign='left';x.textBaseline='alphabetic';
+    x.font='18px serif';co.forEach(c=>x.fillText('⭐',c.x-9,c.y+8));
+    en.forEach(e=>x.fillText('🍄',e.x,e.y+20));
+    x.font='26px serif';x.fillText('🏁',L-80,200);
+    if(IM.complete)x.drawImage(IM,p.x-3,p.y-8,24,29);
+    x.restore();
+  }
+  function loop(){if(!done)upd();draw();raf=requestAnimationFrame(loop)}
+  init();loop();
+  stop=()=>{cancelAnimationFrame(raf);B.l=B.r=B.u=0};
+  document.querySelectorAll('[data-b]').forEach(b=>{const k=b.dataset.b;b.onpointerdown=()=>B[k]=1;b.onpointerup=b.onpointerleave=b.onpointercancel=()=>B[k]=0});
+}
+
+
+/* ===== إحصائية الزوّار (اختياري): سجّلي في goatcounter.com مجانًا وضعي رمز موقعكِ بين علامتي التنصيص ===== */
+const GC='';
+if(GC){const s=document.createElement('script');s.async=1;s.dataset.goatcounter='https://'+GC+'.goatcounter.com/count';s.src='https://gc.zgo.at/count.js';document.head.appendChild(s)}
+const track=p=>{try{window.goatcounter&&goatcounter.count({path:p,event:true})}catch(e){}};
+
+const $=s=>document.querySelector(s),rnd=n=>Math.floor(Math.random()*n);
+const shuf=a=>a.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+let cur=null,QS=[],stop=()=>{},kh=()=>{};const KEY={},B={};
+const prep=q=>({s:q[0],o:shuf([{w:q[1],ok:1},{w:q[2],ok:0},{w:q[3],ok:0}]).map((o,i)=>({...o,l:'أبج'[i]}))});
+const fix=(o,r)=>'✗ الصواب: '+o.l+') '+o.w+'\n💡 '+r;
+function fb(m,ok){const f=$('#fb');f.textContent=m;f.className=ok?'ok':'bad';f.style.animation='none';f.offsetWidth;f.style.animation=''}
+function show(id){document.querySelectorAll('section').forEach(s=>s.hidden=s.id!==id);$('#fbw').hidden=!id.startsWith('g')}
+function home(){stop();stop=()=>{};kh=()=>{};$('#mav').innerHTML=av(AV,90);show('home')}
+function openLesson(i){cur=LS[i];$('#lt').textContent=cur.t;$('#ls').textContent=cur.s;$('#lr').textContent='💡 القاعدة: '+cur.r;show('lesson');scrollTo(0,0);track('lesson/'+cur.t)}
+function launch(n){stop();stop=()=>{};QS=shuf(cur.q.map(prep)).slice(0,5);show('g'+n);fb('بالتوفيق! 🌟',1);[snake,mario,quiz][n-1]();track('play/'+['snake','mario','quiz'][n-1]+'/'+cur.t)}
+try{const a=localStorage.getItem('av');if(a)AV={...DEF,...JSON.parse(a)}}catch(e){}
+LS.forEach((l,i)=>{const b=document.createElement('button');b.className='btn gm lb';b.textContent=l.t;b.onclick=()=>openLesson(i);$('#lg'+l.g).appendChild(b)});
+document.querySelectorAll('[data-g]').forEach(b=>b.onclick=()=>launch(+b.dataset.g));
+document.querySelectorAll('[data-re]').forEach(b=>b.onclick=()=>launch(+b.dataset.re));
+document.querySelectorAll('[data-home]').forEach(b=>b.onclick=home);
+document.querySelectorAll('[data-lesson]').forEach(b=>b.onclick=()=>{stop();stop=()=>{};show('lesson')});
+$('#edc').onclick=()=>{drawCust();show('cust')};
+$('#csave').onclick=()=>{try{localStorage.setItem('av',JSON.stringify(AV))}catch(e){}home()};
+addEventListener('keydown',e=>{KEY[e.key]=1;if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' '].includes(e.key))e.preventDefault();kh(e)});
+addEventListener('keyup',e=>KEY[e.key]=0);
+home();
+
+/* ---------- لعبة 1: الثعبان (بطيء، يأكل الإجابة الصحيحة) ---------- */
+function snake(){
+  const cv=$('#c1'),x=cv.getContext('2d'),C=11,R=13,S=32;
+  let sn,d,nd,ws,sc,lv,t,over,qi,q;
+  const free=()=>{let p;do{p={x:rnd(C),y:rnd(R)}}while(sn.some(s=>s.x==p.x&&s.y==p.y)||ws.some(w=>w.y==p.y&&Math.abs(w.x-p.x)<2));return p};
+  const hud=()=>{$('#s1').textContent='⭐ '+sc+' / '+QS.length;$('#l1').textContent='❤️'.repeat(Math.max(lv,0))};
+  const reset=()=>{sn=[{x:5,y:6}];d=nd={x:1,y:0}};
+  const dir=(a,b)=>{if(a!=-d.x||b!=-d.y)nd={x:a,y:b}};
+  function ask(){q=QS[qi];ws=[];q.o.forEach(o=>ws.push({...free(),...o}));$('#sq').textContent=q.s+'\n'+q.o.map(o=>o.l+') '+o.w).join('    ')}
+  function end(m,ok){clearInterval(t);over=1;fb(m,ok)}
+  function tick(){
+    if(over)return;d=nd;
+    const h={x:(sn[0].x+d.x+C)%C,y:(sn[0].y+d.y+R)%R};
+    if(sn.some(s=>s.x==h.x&&s.y==h.y)){lv--;reset();fb('اصطدمت بذيلك! ✗ حاول مجددًا',0)}
+    else{
+      sn.unshift(h);
+      const w=ws.find(w=>w.x==h.x&&w.y==h.y);
+      if(!w)sn.pop();
+      else{
+        if(w.ok){sc++;fb('أحسنت! إجابة صحيحة ✓ 🎉\n💡 '+cur.r,1)}
+        else{lv--;sn.pop();if(sn.length>1)sn.pop();fb(fix(q.o.find(o=>o.ok),cur.r),0)}
+        qi++;if(qi<QS.length)ask()
+      }
+    }
+    hud();
+    if(lv<=0)end('انتهت اللعبة! جمعت '+sc+' من '+QS.length+' 💪 جرّب مرة أخرى',0);
+    else if(qi>=QS.length)end('🏆 أنهيت اللعبة! إجاباتك الصحيحة: '+sc+' من '+QS.length+' 🌟',1);
+    draw();
+  }
+  function draw(){
+    for(let i=0;i<C;i++)for(let j=0;j<R;j++){x.fillStyle=(i+j)%2?'#ffe3ee':'#fff0f6';x.fillRect(i*S,j*S,S,S)}
+    sn.forEach((s,i)=>{x.fillStyle=i?'#c084fc':'#9333ea';x.beginPath();x.roundRect(s.x*S+2,s.y*S+2,S-4,S-4,10);x.fill()});
+    const h=sn[0];x.fillStyle='#fff';x.beginPath();x.arc(h.x*S+10,h.y*S+12,4,0,7);x.arc(h.x*S+22,h.y*S+12,4,0,7);x.fill();
+    x.fillStyle='#000';x.beginPath();x.arc(h.x*S+10,h.y*S+12,2,0,7);x.arc(h.x*S+22,h.y*S+12,2,0,7);x.fill();
+    x.font='bold 15px Tajawal,Tahoma';x.textAlign='center';x.textBaseline='middle';
+    const sh=q&&q.o.every(o=>o.w.length<=10);
+    ws.forEach(w=>{const tx=sh?w.w:w.l,tw=Math.max(x.measureText(tx).width+14,S-4),px=Math.min(Math.max(w.x*S+S/2-tw/2,0),cv.width-tw);
+      x.fillStyle='#fff';x.strokeStyle='#ec4899';x.lineWidth=2;x.beginPath();x.roundRect(px,w.y*S+3,tw,S-6,9);x.fill();x.stroke();
+      x.fillStyle='#6b21a8';x.fillText(tx,px+tw/2,w.y*S+S/2+1)});
+  }
+  sc=0;lv=3;qi=0;over=0;sn=[];ws=[];reset();ask();hud();draw();t=setInterval(tick,600);
+  stop=()=>clearInterval(t);
+  kh=e=>{const m={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0]}[e.key];if(m)dir(...m)};
+  document.querySelectorAll('[data-d]').forEach(b=>b.onpointerdown=()=>dir(...b.dataset.d.split(',').map(Number)));
+  let sx,sy;cv.ontouchstart=e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY};
+  cv.ontouchend=e=>{const a=e.changedTouches[0].clientX-sx,b=e.changedTouches[0].clientY-sy;
+    if(Math.max(Math.abs(a),Math.abs(b))<20)return;Math.abs(a)>Math.abs(b)?dir(a>0?1:-1,0):dir(0,b>0?1:-1)};
+}
+
+/* ---------- لعبة 3: كنز الأسئلة ---------- */
+function quiz(){
+  const qs=shuf(cur.q.map(prep));let i=0,sc=0,lock=0,dead=0;
+  const box=$('#qo');
+  function show1(){
+    if(dead)return;
+    if(i>=qs.length){$('#qq').textContent='🏆 أنهيت الدرس! نتيجتك: '+sc+' من '+qs.length+(sc==qs.length?' ⭐⭐⭐':'');box.innerHTML='';return}
+    const q=qs[i];$('#s3').textContent='السؤال '+(i+1)+' / '+qs.length;$('#qq').textContent=q.s;box.innerHTML='';lock=0;
+    q.o.forEach(o=>{const b=document.createElement('button');b.className='btn gm';b.textContent=o.l+') '+o.w;
+      b.onclick=()=>{if(lock)return;lock=1;const ok=q.o.find(z=>z.ok);
+        if(o.ok){sc++;b.style.background='#16a34a';fb('أحسنت! إجابة صحيحة ✓ 🎉\n💡 '+cur.r,1)}
+        else{b.style.background='#dc2626';box.children[q.o.indexOf(ok)].style.background='#16a34a';fb(fix(ok,cur.r),0)}
+        i++;setTimeout(show1,2800)};
+      box.appendChild(b)})
+  }
+  show1();stop=()=>{dead=1};
+}
+
+</script>
+</body>
+</html>
